@@ -19,7 +19,7 @@ a {
     text-decoration: none;
 }
 
-/*  HEADER SECTION */
+/* ----- HEADER SECTION ----- */
 
 header {
     margin: 0 auto;
@@ -43,13 +43,15 @@ ul li {
     display: inline;
 }
 
-/*  BANNER SECTION */
+
+/* ----- BANNER SECTION ----- */
 
 .banner {
     height: 554px;
     background-image: url(/images/sixteen-miles-out-GVhAezjtX-4-unsplash.jpg);
     background-size: cover;
-    background-position: 50% -200px;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -92,13 +94,16 @@ ul li {
     margin: 20px 0;
 }
 
-/* FEATURED SECTION */
+
+
+/* ----- FEATURED SECTION ----- */
 
 .feature {
     margin-bottom: 40px;
 }
 
 .section-title {
+    text-align: left;
     font-size: 1.5rem;
     letter-spacing: 0.25rem;
     color: white;
@@ -108,7 +113,6 @@ ul li {
 }
 
 .images-cards {
-    margin-left: 20px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -135,7 +139,7 @@ ul li {
     color: #613823;
 }
 
-/* ABOUT US SECTION */
+/* ----- ABOUT-US SECTION ----- */
 
 #about-us {
     margin-bottom: 50px;
@@ -148,7 +152,7 @@ ul li {
     line-height: 2.5rem;
 }
 
-/* CONTACT SECTION */
+/* ----- CONTACT SECTION ----- */
 
 #contact {
     margin: 10px 0;
@@ -195,12 +199,91 @@ ul li {
     color: #41281A;
 }
 
-/* FOOTER SECTION */
+/* ----- FOOTER SECTION ----- */
 
 footer .copyright {
-    font-size : 1.3rem;
-    line-height : 2rem;
-    letter-spacing : 0.21;
-    color : #745B45;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    letter-spacing: 0.21;
+    color: #745B45;
     padding: 10px 0 10px 20px;
 }
+
+
+/* ----- TABLET VIEW ----- */
+
+@media screen and (max-width: 1120px) {
+
+    .section-title {
+        font-size: 1.3rem;
+        letter-spacing: 0.2rem;
+        padding: 3px 0 3px 30px;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+    
+     /* BANNER AND TITLE */
+    .line-quote {
+        font-size: 1.7rem;
+        letter-spacing: 0.1rem;
+        font-weight: 500;
+    }
+
+    .img-container {
+        height: 300px;
+        width: 350px;
+        overflow: hidden;
+        margin: 50px 0 20px;
+    }
+
+    .images-description {
+        font-size: 1.8rem;
+    }
+
+    .images-cards {
+        padding-bottom: 50px;
+    }
+
+    #about-us p {
+        font-size: 1.3rem;
+        line-height: 1.2rem;
+    }
+
+}
+
+
+@media screen and (max-width: 813px) {
+
+ /* HEADER */
+    .logo img {
+        height: 80px;
+        width: auto;
+    }
+
+    ul li {
+        font-size: 1.7rem;
+    }
+
+
+    /* BANNER AND LINE QUOTE */
+    .banner {
+        height: 400px;
+        object-position: 50% 180px;
+    }
+
+    .banner-title {
+        font-size: 2.5rem;
+    }
+
+    .banner-sub {
+        font-size: 1rem;
+    }
+
+    .line-quote {
+        font-size: 1.5rem;
+    }
+    
+}
+
