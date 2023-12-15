@@ -214,7 +214,7 @@ footer .copyright {
 }
 
 
-/* ----- TABLET VIEW ----- */
+/* ----- TABLET VIEW ----- ------------------------*/
 
 @media screen and (max-width: 1120px) {
     /* FEATURED */
@@ -291,6 +291,8 @@ footer .copyright {
     }
 
 }
+
+/* ----- MOBILE VIEW ----- ------------------------*/
 
 @media screen and (max-width: 660px) {
 
