@@ -98,6 +98,10 @@ ul li {
 
 /* ----- FEATURED SECTION ----- */
 
+p.mobile {
+    display: none;
+}
+
 .feature {
     margin-bottom: 40px;
 }
@@ -142,7 +146,7 @@ ul li {
 /* ----- ABOUT-US SECTION ----- */
 
 #about-us {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 
@@ -213,7 +217,7 @@ footer .copyright {
 /* ----- TABLET VIEW ----- */
 
 @media screen and (max-width: 1120px) {
-
+    /* FEATURED */
     .section-title {
         font-size: 1.3rem;
         letter-spacing: 0.2rem;
@@ -223,14 +227,15 @@ footer .copyright {
 }
 
 @media screen and (max-width: 960px) {
-    
-     /* BANNER AND TITLE */
+
+    /* BANNER AND TITLE */
     .line-quote {
         font-size: 1.7rem;
         letter-spacing: 0.1rem;
         font-weight: 500;
     }
 
+    /* FEATURED */
     .img-container {
         height: 300px;
         width: 350px;
@@ -256,7 +261,7 @@ footer .copyright {
 
 @media screen and (max-width: 813px) {
 
- /* HEADER */
+    /* HEADER */
     .logo img {
         height: 80px;
         width: auto;
@@ -284,6 +289,100 @@ footer .copyright {
     .line-quote {
         font-size: 1.5rem;
     }
-    
+
 }
 
+@media screen and (max-width: 660px) {
+
+    /* HEADER */
+    .logo img {
+        height: 60px;
+        width: auto;
+    }
+
+    ul li {
+        font-size: 1rem;
+        display: block;
+    }
+
+    /* BANNER and LINEQUOTE*/
+    .banner {
+        height: 300px;
+        object-position: 50% 180px;
+    }
+
+    .banner-title {
+        font-size: 1.5rem;
+        letter-spacing: 0.5rem;
+        padding: 5px 0;
+    }
+
+    .banner-sub {
+        display: none;
+    }
+
+    .line-quote {
+        font-size: 1rem;
+        line-height: 1rem;
+        letter-spacing: 0.1rem;
+        margin: 20px 0;
+    }
+
+    /* FEATURED */
+
+    .feature {
+        margin-bottom: 10px;       
+    }
+
+    .section-title {
+        font-size: 0.5rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .img-container {
+        height: 200px;
+        width: 250px;
+        overflow: hidden;
+        margin: 30px 0 20px;
+    }
+    
+    .global {
+        display: none;
+    }
+
+    p.mobile {
+        display: inline-block;
+        font-size: 1rem;
+        line-height: 1rem;
+
+    }
+
+    .images-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    /* ABOUT-US */
+    #about-us p {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+   
+    /*  CONTACT  */
+
+    .cont-img-container {
+        height: 200px;
+    }
+
+    .contact-info {
+        padding: 10px;
+    }
+
+    /*  FOOTER  */
+    footer .copyright {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+}
